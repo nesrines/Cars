@@ -1,0 +1,9 @@
+﻿@model Brand
+<h1>@Model.Name Details</h1>
+<ul>
+    <li>Id: @Model.Id</li>
+    <li>Name: @Model.Name</li>
+    <li>Place: @Model.Place</li>
+    <li>Creation Year: @Model.CreationYear</li>
+    <li><a asp-controller="Model" asp-action="Index" asp-route-id="@Model.Id">View Models</a></li>
+</ul>

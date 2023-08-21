@@ -1,0 +1,8 @@
+﻿@model Model
+<h1>@Model.Name Details</h1>
+<ul>
+    <li>Id: @Model.Id</li>
+    <li>Name: @Model.Name</li>
+    <li>Price: $@Model.Price</li>
+    <li><a asp-controller="Home" asp-action="Details" asp-route-id="@Model.BrandId">Brand: @Model.BrandId</a></li>
+</ul>
